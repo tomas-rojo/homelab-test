@@ -16,8 +16,8 @@ jobs:
     env:
       TF_IN_AUTOMATION: true
       TF_INPUT: false
-      TWINGATE_API_TOKEN: ${{ secrets.TWINGATE_API_TOKEN }}
-      TWINGATE_ADMIN_USER_ID: ${{ secrets.TWINGATE_ADMIN_USER_ID }}
+      TF_TWINGATE_API_TOKEN: ${{ secrets.TWINGATE_API_TOKEN }}
+      TF_TWINGATE_ADMIN_USER_ID: ${{ secrets.TWINGATE_ADMIN_USER_ID }}
 
     steps:
       - name: Checkout repo
